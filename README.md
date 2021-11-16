@@ -1,2 +1,2 @@
-# avtaar-ass1
+# avtaar-assignments
 assignment-1
