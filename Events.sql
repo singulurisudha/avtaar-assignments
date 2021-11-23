@@ -15,6 +15,7 @@ insert into eventt(id,uid,namee,occurence,startDate,endDate)values(10,10,'christ
 insert into eventt(id,uid,namee,occurence,startDate,endDate)values(11,11,'Leap Year','ONE TIME','2022-02-29','2022-03-01');
 select *from eventt;
 select * from eventt where occurence = 'YEARLY';
+select * from eventt where occurence = 'ONETIME';
 select * from eventt where uid = 1;
 select namee,occurence,uid from eventt where ( uid = 1 or uid = 4 or uid = 2 or uid = 6 or uid = 8 or uid = 9 or uid = 11);
 
