@@ -1,3 +1,5 @@
+//events -id(primary key , auto generated) uid(uid of the user to who the event belongs)non-null -name-string,name of the event, -occurence(enum values YEARLY/ONETIME)non-null , startDate-Date non-null, endDate - Date //
+
 use demo;
 create table eventt(id int not null auto_increment,uid int,primary key (id),foreign key (uid) references users(uid),namee varchar(100),occurence enum('WEEKLY','MONTHLY','YEARLY','ONETIME'),startDate date NULL,endDate date NULL);
 insert into eventt(id,uid,namee,occurence,startDate,endDate)values(1,1,'Birthday','YEARLY','2022-07-27','2022-07-28');
