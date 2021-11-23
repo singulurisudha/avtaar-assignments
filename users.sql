@@ -1,3 +1,6 @@
+//Assignment-3//
+//user uid(primary key,auto generated) name-String,nun null, gender- string(enum values male/female) email-unique in the table,non-null//
+
 use demo;
 create table users(uid int NOT NULL auto_increment,username varchar(100) NOT NULL,gender ENUM('MALE','FEMALE'),email varchar(100) NOT NULL UNIQUE,primary key(uid));
 insert into users(uid,username,gender,email)values(1,'AradhayKumar','Male','Aaradhaykumar@gmail.com');
